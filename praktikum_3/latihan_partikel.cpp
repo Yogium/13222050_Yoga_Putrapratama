@@ -1,7 +1,7 @@
 #include <iostream>
 
 class particle{
-    private:
+    public:
         double posisi_x, posisi_y;
     
     public:
@@ -24,6 +24,7 @@ int main(){
     particle p1;
     p1.aturPosisi(0.0, 0.0);
     p1.bergerak(2.5, 3.0);
+    p1.posisi_x = 100.0;
     p1.tampilkanPosisi();
     return 0;
 }
